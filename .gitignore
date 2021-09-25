@@ -1,3 +1,4 @@
 bib.json
 __pycache__/
 .vscode/
+static/bootstrap-slider.min.js
