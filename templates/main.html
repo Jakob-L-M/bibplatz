@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterPlatzbuchung | J-L-M</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body> 
+    <h1>Finde einen Platz in der UB-Marburg</h1>
+    <div id='days'></div>
+    <div id='layer'></div>
+    <input id='start_time' type="number"></input>
+    <input id='end_time' type="number"></input>
+    <div><button id='find' onclick="get_seats()">Suchen</button></div>
+    <div id='result'></div>
+</body>
+</html>
